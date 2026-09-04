@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms – Dynex</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-bg"></div>
+  <div class="noise"></div>
+
+  <nav>
+    <div class="nav-shell">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"><img src="logo.png" alt="Dynex Logo" /><span>Dynex</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Start</a>
+          <a href="commands.html">Commands</a>
+          <a href="premium.html">Premium</a>
+          <a href="team.html">Team</a>
+          <a href="faq.html">FAQ</a>
+          <a class="active" href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="nav-cta" href="#">Add to Discord</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="container">
+      <span class="eyebrow reveal in"><span class="dot"></span>Rechtliches</span>
+      <h1 class="reveal in">Terms of <span class="grad-text">Service</span></h1>
+      <p class="reveal in" data-delay="1">Die Bedingungen für die Nutzung von Dynex.</p>
+      <div class="updated">Zuletzt aktualisiert: <span id="updated"></span></div>
+    </div>
+  </header>
+
+  <section class="legal" style="padding-top:0;">
+    <div class="container">
+      <div class="block">Indem du Dynex nutzt, stimmst du diesen Bedingungen zu. Bitte lies sie vollständig.</div>
+
+      <h3>1. Nutzung</h3>
+      <p>Dynex wird als Discord-Bot bereitgestellt. Durch das Hinzufügen des Bots zu deinem Server erklärst du dich damit einverstanden, diese Bedingungen einzuhalten.</p>
+
+      <h3>2. Verfügbarkeit</h3>
+      <p>Wir bemühen uns um einen zuverlässigen Betrieb, stehen aber nicht für eine ununterbrochene Verfügbarkeit ein. Dynex kann zeitweise eingeschränkt oder nicht erreichbar sein.</p>
+
+      <h3>3. Verantwortung des Nutzers</h3>
+      <ul>
+        <li>Du nutzt Dynex rechtskonform und im Einklang mit den Nutzungsbedingungen von Discord.</li>
+        <li>Du missbrauchst den Bot nicht, etwa durch Spam, Automatisierung oder das Ausnutzen von Schwachstellen.</li>
+        <li>Du verantwortest die Inhalte und Einstellungen, die auf deinem Server über Dynex eingerichtet werden.</li>
+      </ul>
+
+      <h3>4. Änderungen</h3>
+      <p>Wir können diese Bedingungen jederzeit mit angemessener Vorankündigung anpassen. Die fortgesetzte Nutzung gilt als Zustimmung zu den geänderten Bedingungen.</p>
+
+      <h3>5. Kündigung</h3>
+      <p>Wir können die Bereitstellung von Dynex für einen Server oder einzelne Nutzer einstellen, wenn diese Bedingungen oder die Discord-Richtlinien verletzt werden.</p>
+
+      <h3>6. Haftungsausschluss</h3>
+      <p>Dynex wird im Rahmen des Zumutbaren bereitgestellt, ohne ausdrückliche oder stillschweigende Zusicherungen. Mit Ausnahme von Vorsatz und grober Fahrlässigkeit besteht keine Gewährleistung.</p>
+
+      <h3>7. Kontakt</h3>
+      <p>Bei Fragen zu diesen Bedingungen erreichst du uns über den Discord-Support.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><span>Dynex</span><p>Dein Allround-Discord-Bot für Moderation, Leveling &amp; mehr.</p></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Ressourcen</h4><a href="commands.html">Commands</a><a href="faq.html">FAQ</a></div>
+        <div class="footer-col"><h4>Rechtliches</h4><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div>
+        <div class="footer-col"><h4>Projekt</h4><a href="index.html">Start</a><a href="team.html">Team</a></div>
+        <div class="footer-col"><h4>Community</h4><a href="#">Discord-Support</a><a href="#">Status</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Dynex</span><span>Nicht offiziell mit Discord verbunden.</span></div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("updated").textContent = new Date().toLocaleDateString("de-DE", { year: "numeric", month: "long", day: "numeric" });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
