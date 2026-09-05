@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commands – Dynex Global Economy</title>
+  <meta name="description" content="Übersicht aller Dynex Economy-Commands: Währung, Shops, Jobs, Transfers und Belohnungen – überall auf Discord." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#7e4dff" />
+  <link rel="canonical" href="https://dynexbot.com/commands" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dynex" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:title" content="Commands – Dynex Global Economy" />
+  <meta property="og:description" content="Alle Economy-Commands von Dynex auf einen Blick: Währung, Shops, Jobs und mehr." />
+  <meta property="og:image" content="https://dynexbot.com/logo.png" />
+  <meta property="og:url" content="https://dynexbot.com/commands" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Commands – Dynex Global Economy" />
+  <meta name="twitter:description" content="Alle Dynex Economy-Commands auf einen Blick." />
+  <meta name="twitter:image" content="https://dynexbot.com/logo.png" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-bg"></div>
+  <div class="noise"></div>
+
+  <nav>
+    <div class="nav-shell">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"><img src="logo.png" alt="Dynex Logo" /><span>Dynex</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Start</a>
+          <a class="active" href="commands.html">Commands</a>
+          <a href="premium.html">Premium</a>
+          <a href="team.html">Team</a>
+          <a href="faq.html">FAQ</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="nav-cta" href="https://discord.com/oauth2/authorize?client_id=1545361107915374632">Add to Discord</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="container">
+      <span class="eyebrow reveal in"><span class="dot"></span>Befehle</span>
+      <h1 class="reveal in">Alle <span class="grad-text">Commands</span></h1>
+      <p class="reveal in" data-delay="1">Deine globale Economy funktioniert überall. Hier siehst du alle Commands auf einen Blick.</p>
+    </div>
+  </header>
+
+  <section style="padding-top:20px;">
+    <div class="container">
+
+      <div class="cmd-cat reveal">
+        <h2><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 12 7.5h-1a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-1a2 2 0 0 1-2.8-1.5"/><path d="M12 5.5v1M12 17.5v1"/></svg></span>Währung</h2>
+        <div class="cmd-table">
+          <div class="cmd-row"><span class="cmd-name">/balance</span><span class="cmd-desc">Zeigt deinen aktuellen Kontostand.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/pay</span><span class="cmd-desc">Überweist Währung an ein anderes Mitglied.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/give</span><span class="cmd-desc">Schenkt einem Mitglied einen Betrag.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/top</span><span class="cmd-desc">Zeigt das Leaderboard der reichsten Mitglieder.</span></div>
+        </div>
+      </div>
+
+      <div class="cmd-cat reveal">
+        <h2><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20V8"/></svg></span>Shop</h2>
+        <div class="cmd-table">
+          <div class="cmd-row"><span class="cmd-name">/shop</span><span class="cmd-desc">Öffnet den globalen Shop.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/buy</span><span class="cmd-desc">Kauft ein Item oder eine Rolle aus dem Shop.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/inventory</span><span class="cmd-desc">Zeigt alle Items in deinem Inventar.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/shop add</span><span class="cmd-desc">Fügt ein neues globales Item oder eine Rolle hinzu.</span></div>
+        </div>
+      </div>
+
+      <div class="cmd-cat reveal">
+        <h2><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></span>Jobs &amp; Einkommen</h2>
+        <div class="cmd-table">
+          <div class="cmd-row"><span class="cmd-name">/jobs</span><span class="cmd-desc">Listet alle verfügbaren Jobs auf.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/work</span><span class="cmd-desc">Übernimmt einen Job und verdient damit.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/salary</span><span class="cmd-desc">Zeigt dein aktuelles Gehalt an.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/jobs create</span><span class="cmd-desc">Erstellt einen neuen Job mit Gehalt.</span></div>
+        </div>
+      </div>
+
+      <div class="cmd-cat reveal">
+        <h2><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0-9-9c0 1.7.5 3 1.3 4.3L3 20l3.7-1.3A9 9 0 0 0 12 21z"/><path d="M8.5 10.5h7M12 7v7"/></svg></span>Belohnungen</h2>
+        <div class="cmd-table">
+          <div class="cmd-row"><span class="cmd-name">/daily</span><span class="cmd-desc">Holt deine tägliche Belohnung ab.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/weekly</span><span class="cmd-desc">Holt deine wöchentliche Belohnung ab.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/gamble</span><span class="cmd-desc">Lass es auf eine Wette mit Währung ankommen.</span></div>
+        </div>
+      </div>
+
+      <div class="cmd-cat reveal">
+        <h2><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M12 8v8"/></svg></span>Global</h2>
+        <div class="cmd-table">
+          <div class="cmd-row"><span class="cmd-name">/leaderboard</span><span class="cmd-desc">Zeigt das weltweite Leaderboard.</span></div>
+          <div class="cmd-row"><span class="cmd-name">/transfer</span><span class="cmd-desc">Überweist Währung global an jedes Mitglied.</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-wrap reveal">
+        <div class="grain"></div>
+        <span class="eyebrow" style="border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.12);color:#fff;"><span class="dot" style="background:#fff;box-shadow:none;"></span>Loslegen</span>
+        <h2>Bereit, Dynex zu nutzen?</h2>
+        <p>Füge den Bot hinzu und probiere alle Commands selbst aus.</p>
+        <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1545361107915374632">Add to Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><span>Dynex</span><p>Die globale Economy für deinen Discord – überall hin mitgenommen.</p></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Ressourcen</h4><a href="commands.html">Commands</a><a href="faq.html">FAQ</a></div>
+        <div class="footer-col"><h4>Rechtliches</h4><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div>
+        <div class="footer-col"><h4>Projekt</h4><a href="index.html">Start</a><a href="premium.html">Premium</a></div>
+        <div class="footer-col"><h4>Community</h4><a href="https://discord.gg/HcmdkX8BWf">Discord-Support</a><a href="#">Status</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Dynex</span><span>Nicht offiziell mit Discord verbunden.</span></div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
+</body>
+</html>
